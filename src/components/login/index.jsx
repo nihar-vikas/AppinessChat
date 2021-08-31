@@ -62,11 +62,11 @@ const Login = () => {
                       <Row justify="start">
                         <Col md={24} xs={24} className="login-input-div">
                           <h5 htmlFor="username" className="label">Username</h5>
-                          <Input onPressEnter={handleLogin} placeholder="Enter your username" className="inputfield" prefix={<MailOutlined />} value={userName} onChange={(e) => setUserName(e.target.value.trimLeft())} name="username" type="email" id="username" required />
+                          <Input allowClear onPressEnter={handleLogin} placeholder="Enter your username" className="inputfield" prefix={<MailOutlined />} value={userName} onChange={(e) => setUserName(e.target.value.trimLeft())} name="username" type="email" id="username" required />
                         </Col>
                         <Col md={24} xs={24} className="login-input-div">
                           <h5 htmlFor="password" className="label">Password</h5>
-                          <Input.Password onPressEnter={handleLogin} placeholder="Enter your password" className="inputfield" prefix={<LockOutlined />} value={password} onChange={(e) => setPassword(e.target.value.trimLeft())} name="password" type="password" id="password" required />
+                          <Input.Password allowClear onPressEnter={handleLogin} placeholder="Enter your password" className="inputfield" prefix={<LockOutlined />} value={password} onChange={(e) => setPassword(e.target.value.trimLeft())} name="password" type="password" id="password" required />
                         </Col>
                         <Col md={24} xs={24} className="login-input-div" style={{ marginTop: '10px' }}>
                           <Button loading={loading} type="primary" className="login-button" onClick={handleLogin}>Login</Button>

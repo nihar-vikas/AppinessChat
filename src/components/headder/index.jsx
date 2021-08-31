@@ -18,7 +18,7 @@ const Headder = () => {
   };
 
   const menu = (
-    <Row style={{ width: '100%', display: 'flex', border: '1px solid black' }}>
+    <Row style={{ width: '100%', display: 'flex', border: '1px solid #ccc' }}>
       <Col md={24} xs={24}>
         <Menu style={{ minWidth: 'auto', textAlign: 'center' }}>
           <Menu.Item onClick={handleLogOut} style={{ margin: '0px !important', padding: '0px !important' }}>
