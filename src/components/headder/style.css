@@ -1,0 +1,11 @@
+.headder-main-div {
+    height: 4rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.headder-logo { 
+  padding: 0.1rem;
+  image-rendering: pixelated;
+}
