@@ -1,0 +1,35 @@
+@import '../../globel.scss';
+
+.headder-main-div {
+    height: 4rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .headder-logo { 
+      padding: 0.1rem;
+      image-rendering: pixelated;
+      cursor: pointer;
+    }
+
+    .headder-Name { 
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: poppins;
+      margin-top: 0.5rem;
+      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }    
+}
+
+.logout-btn {
+  background-color: $buttonBackgroundColor2;
+  color: $mainTextColor;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  @include desktop {
+    margin-right: 0.5rem;
+  }
+}

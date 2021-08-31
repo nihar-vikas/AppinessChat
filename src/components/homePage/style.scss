@@ -1,0 +1,24 @@
+@import '../../globel.scss';
+
+.main-body {
+    width: 100%;
+    height: 100vh;
+    background: $mainBackgroundColor;
+    .langing-page-heading {
+        color: $mainTextColor;
+        font: normal bolder 30px/45px poppins, sans-serif;
+        @include desktop {
+            font: normal bolder 35px/20px poppins, sans-serif;
+        }
+    }
+    .login-btn {
+        height: 50px;
+        border-radius: 50px;
+        width: 250px;
+        border: none;
+        outline: none;
+        color: $buttonColor;
+        font-size: 1rem;
+        background: $buttonBackgroundColor;
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../globel.scss';
+
+.page-not-found-main-div {
+    width: 100%;
+    height: 100vh !important;
+    background: $mainBackgroundColor;
+    
+    .page-not-found-div {
+        padding: 1.5rem 2rem;
+        margin: 6rem 0 !important;
+        text-align: center;
+
+        .page-not-found-cell {
+            padding: 1rem .5rem;
+        }
+        .page-not-found-label {
+            color: $mainTextColor;
+            font: normal bolder 35px/15px poppins, sans-serif;
+            @include desktop {
+                font: normal bolder 40px/15px poppins, sans-serif;
+            }
+        }
+        .page-not-found-text {
+            color: $mainTextColor;
+            font: normal bolder 25px/15px poppins, sans-serif;
+            @include desktop {
+                font: normal bolder 25px/45px poppins, sans-serif;
+            }
+        }
+        
+        .page-not-back-button {
+            height: 50px;
+            border-radius: 50px;
+            width: 250px;
+            border: none;
+            outline: none;
+            color: $buttonColor;
+            font-size: 1rem;
+            background: $buttonBackgroundColor;  
+            text-align: center !important;
+        }
+    }
+}

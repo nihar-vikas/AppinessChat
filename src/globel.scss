@@ -1,0 +1,72 @@
+$mainTextColor: #ffffff;
+$primaryTextColor: #65C7F7;
+$secondaryTextColor: #8e0e00;
+$mainBackgroundColor: linear-gradient(to right, #9CECFB, #65C7F7, #9CECFB);
+$buttonColor: #ffffff;
+$buttonBackgroundColor: linear-gradient(to right, #ff9068, #fd746c);
+$buttonBackgroundColor2: #ee6363;
+$textInputColor: #ffffff;
+
+$mobile: 1024px;
+
+body {
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+@mixin desktop {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.min-height {
+  position: relative;
+  min-height: 100vh;
+  margin-left: -10vh;
+  margin-right: -10vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-around {
+  justify-content: space-around;
+}

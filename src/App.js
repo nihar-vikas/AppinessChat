@@ -10,6 +10,7 @@ import SignUp from './components/signup';
 import HomePage from './components/homePage';
 import Chat from './components/chat';
 import ForgetPassword from './components/forgetPassword';
+import PageNotFound from './components/pageNotFound';
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
               <Route path="/signup" exact component={SignUp} />
               <Route path="/forget-password" exact component={ForgetPassword} />
               <Route path="/chat" exact component={Chat} />
+              <Route path="**" exact component={PageNotFound} />
             </Switch>
           </AuthProvider>
         </BrowserRouter>

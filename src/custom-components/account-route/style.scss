@@ -1,0 +1,16 @@
+@import '../../globel.scss';
+
+.account-label { 
+    color: $mainTextColor;
+    font: normal bolder 13px/20px poppins, sans-serif;
+    @include desktop {
+        font: normal bolder 18px/20px poppins, sans-serif;
+    }
+}
+.account-link {
+    @include desktop {
+        font: normal bolder 19px/20px poppins, sans-serif;
+    }
+    font: normal bolder 15px/20px poppins, sans-serif;
+    color: $secondaryTextColor;
+}

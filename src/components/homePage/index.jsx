@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { Row, Col, Button } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import Headder from '../headder';
-import './style.css';
+import './style.scss';
 
 const HomePage = () => {
   const history = useHistory();
