@@ -9,3 +9,13 @@
   padding: 0.1rem;
   image-rendering: pixelated;
 }
+.headder-Name { 
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: poppins;
+  margin-top: 0.5rem;
+  /* background: linear-gradient(to right, #92FE9D, #00C9FF); */
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
