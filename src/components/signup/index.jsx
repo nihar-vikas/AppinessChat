@@ -73,15 +73,15 @@ const SignUp = () => {
                       <Row justify="start">
                         <Col md={24} xs={24} className="sign-up-input-div">
                           <h5 htmlFor="Name" className="label">Name</h5>
-                          <Input onPressEnter={handleSignUp} placeholder="Enter your name" className="inputfield" prefix={<UserOutlined />} value={name} onChange={(e) => setName(e.target.value.trimLeft())} name="name" type="text" id="name" required />
+                          <Input allowClear onPressEnter={handleSignUp} placeholder="Enter your name" className="inputfield" prefix={<UserOutlined />} value={name} onChange={(e) => setName(e.target.value.trimLeft())} name="name" type="text" id="name" required />
                         </Col>
                         <Col md={24} xs={24} className="sign-up-input-div">
                           <h5 htmlFor="email" className="label">Email Address</h5>
-                          <Input onPressEnter={handleSignUp} placeholder="Enter your email address" className="inputfield" prefix={<MailOutlined />} value={email} onChange={(e) => setEmail(e.target.value.trimLeft())} name="email" type="email" id="email" required />
+                          <Input allowClear onPressEnter={handleSignUp} placeholder="Enter your email address" className="inputfield" prefix={<MailOutlined />} value={email} onChange={(e) => setEmail(e.target.value.trimLeft())} name="email" type="email" id="email" required />
                         </Col>
                         <Col md={24} xs={24} className="sign-up-input-div">
                           <h5 htmlFor="password" className="label">Password</h5>
-                          <Input.Password onPressEnter={handleSignUp} placeholder="Enter password" className="inputfield" prefix={<LockOutlined />} value={password} onChange={(e) => setPassword(e.target.value.trimLeft())} name="password" type="password" id="password" required />
+                          <Input.Password allowClear onPressEnter={handleSignUp} placeholder="Enter password" className="inputfield" prefix={<LockOutlined />} value={password} onChange={(e) => setPassword(e.target.value.trimLeft())} name="password" type="password" id="password" required />
                         </Col>
                         <Col md={24} xs={24} className="sign-up-input-div" style={{ marginTop: '10px' }}>
                           <Button loading={loading} type="primary" className="sign-up-button" onClick={handleSignUp}>Sign Up</Button>

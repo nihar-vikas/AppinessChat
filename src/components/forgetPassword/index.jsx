@@ -56,7 +56,7 @@ const ForgetPassword = () => {
                       <Row justify="start">
                         <Col md={24} xs={24} className="forget-input-div">
                           <h5 htmlFor="Name" className="label">Email Address</h5>
-                          <Input onPressEnter={handleForgetPassword} placeholder="Enter your registered email address" className="inputfield" prefix={<MailOutlined />} value={email} onChange={(e) => setEmail(e.target.value.trimLeft())} name="email" type="email" id="email" required />
+                          <Input allowClear onPressEnter={handleForgetPassword} placeholder="Enter your registered email address" className="inputfield" prefix={<MailOutlined />} value={email} onChange={(e) => setEmail(e.target.value.trimLeft())} name="email" type="email" id="email" required />
                         </Col>
                         <Col md={24} xs={24} className="forget-input-div" style={{ marginTop: '10px' }}>
                           <Button loading={loading} type="primary" className="forget-button" onClick={handleForgetPassword}>Send React Password Link To Email</Button>
