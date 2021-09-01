@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import {
-  BrowserRouter, Switch, Route,
+  BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
 import { AuthProvider } from './context/auth-context/authContext';
 import Login from './components/login';
@@ -16,7 +16,7 @@ const App = () => (
   <div>
     <Row>
       <Col md={24} xs={24}>
-        <BrowserRouter>
+        <Router>
           <AuthProvider>
             <Switch>
               <Route path="/" exact component={HomePage} />
@@ -27,7 +27,7 @@ const App = () => (
               <Route path="**" exact component={PageNotFound} />
             </Switch>
           </AuthProvider>
-        </BrowserRouter>
+        </Router>
       </Col>
     </Row>
   </div>
